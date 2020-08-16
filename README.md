@@ -8,11 +8,11 @@
 - [2. Reto de Negócio](#2-reto-de-negocio)
 - [3. Objetivo](#3-objetivo)
 - [4. Desarrollando la Solución](#4-desarrollando-la-solución)
-  - [4.1. Pre-requisitos](41-pre-requisitos)
+  - [4.1. Pre-requisitos](#41-pre-requisitos)
   - [4.2. Resumen de tareas](#42-resumen-de-las-tareas)
   - [4.3. Desarrollo](#43-desarrollo)
-- [5. Envío](5-envío)
-- [6. Sobre la evaluación](6-sobre-la-evaluación)
+- [5. Envío](#5-envío)
+- [6. Sobre la evaluación](#6-sobre-la-evaluación)
 
 ## Para Ayudarte
 
@@ -92,6 +92,9 @@ Al identificar la `intent` de Adios, su asistente debe terminar la conversación
 
 Al identificar la Solicitud de `intent`, su asistente debe identificar la solicitud (`Request intent`), el tipo de solicitud (`request entity`) y la aplicación correspondiente (`application entity`) . El asistente debe responder informando el tipo de solicitud y aplicación, junto con un número de ticket generado para esta solicitud. Adicionalmente el asistente debe preguntar si el usuario quiere acceso al reporte de la solicitud en el futuro (Si o No). Para este nodo es recomendable utilizar el nodo Problem_report como ejemplo.
 
+> Aclaración: El número de reporte siempre lo debe responder junto con el tipo de solicitud y aplicación. Y preguntar si desea acceso a un reporte.. el reporte no es lo mismo al numero del incidente. despues de la pregunta deben esperar el "si" o "no" y responder en casi que sea un “Si” con un acceso concedido al reporte o algo por el estilo que diga que tiene acceso al reporte
+
+
 Las `intents` ya están completadas, pero eso no significa que no puedas agregar o eliminar ejemplos, ya que estas modificaciones pueden mejorar la confianza en la identificación del modelo. No dudes en realizar los cambios que consideres necesarios siempre que el resultado sea el especificado anteriormente.
 
 
@@ -152,6 +155,8 @@ En la sección Asistente creará un asistente.
 ## 5. Envío
 
 Para cargar la aplicación en IBM Cloud, debes **hacer clic en el botón a continuación**, que activará la herramienta IBM Cloud _Continuous Delivery_ (también conocida como _Delivery Pipeline_). La herramienta te pedirá tus credenciales, tu correo electrónico(registro de la Maratón) y una contraseña, que debes elegir y utilizar en el futuro (La llamaremos contraseña del toolchain).
+
+> Aclaración: El nombre del toolchain no puede contener espacios ni caracteres especiales ( - es valido).
 
 <div align="center">
 <p><b>🚨 HAZ CLIC PARA ENVIAR LA APLICACIÓN A IBM CLOUD 🚨</b></p>
